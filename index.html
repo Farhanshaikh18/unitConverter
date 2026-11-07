@@ -1,34 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta charset="UTF-8">
-    <title>Metric/Imperial Unit Conversion</title>
-    <link rel = "stylesheet" href = "index.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unit  Converter</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div class="converter">
-    <div class="header">Metric/Imperial Unit Conversion</div>
-    <div class="input-section">
-      <input id="input-el"  type="number">
-      <br>
-      <button id = "convert-btn">Convert</button>
+    <div class="converter-card">
+
+        <div class="hero">
+            <h1>Metric/Imperial Unit Conversion</h1>
+
+            <input id="input-el" type="number" value="">
+
+            <button id="btn-el">Convert</button>
+        </div>
+
+        <div class="results">
+
+            <div class="result-box">
+                <h3>Length (Meter/Feet)</h3>
+                <p id="length-el">-- meters = -- feet | -- feet = -- meters</p>
+            </div>
+
+            <div class="result-box">
+                <h3>Volume (Liters/Gallons)</h3>
+                <p id="volume-el">-- liters = -- gallons | -- gallons = -- liters</p>
+            </div>
+
+            <div class="result-box">
+                <h3>Mass (Kilograms/Pounds)</h3>
+                <p id="mass-el">-- kilos = -- pounds | -- pounds = -- kilos</p>
+            </div>
+
+        </div>
     </div>
-    <div class="results">
-      <div class="category">
-        <h3>Length (Meter/Feet)</h3>
-        <p id = "Conversion1">-- meters = -- feet | -- feet = -- meters</p>
-      </div>
-      <div class="category">
-        <h3 >Volume (Liters/Gallons)</h3>
-        <p id = "Conversion2">-- liters = -- gallons | -- gallons = -- liters</p>
-      </div>
-      <div class="category">
-        <h3>Mass (Kilograms/Pounds)</h3>
-        <p id = "Conversion3">- kilos = -- pounds | -- pounds = -- kilos</p>
-      </div>
-    </div>
-  </div>
-  <script src="index.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
